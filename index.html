@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design/mobilefirst.css">
+    <link rel="stylesheet" href="design/queries.css">
+    
+    <title>Sing up</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div id="image">
+                
+            </div>
+            <div class="login">
+                <h1>Welcome to [AppName] login</h1>
+                <p>Please enter your credentials to access your acconunt. </p>
+                <fieldset>
+                    <form action="backend.php" method="post" autocomplete="on">
+                        <div>
+                            <label for="name">Username:</label>
+                            <input type="text" id="name" id="name" placeholder="Username/Email Input Field" required>
+                        </div>
+                        <div>
+                            <label for="key">Password:</label>
+                            <input type="Password" name="key" id="key" placeholder="Min 8 characters" minlength="8" required>
+                        </div>
+                        <div id="buttom">
+                            <input type="submit">
+                            <input type="reset">
+                        </div>
+                </fieldset>
+
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

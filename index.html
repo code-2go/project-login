@@ -15,8 +15,10 @@
                 
             </div>
             <div class="login">
-                <h1>Welcome to [AppName] login</h1>
-                <p>Please enter your credentials to access your acconunt. </p>
+                <div id="head">
+                    <h1>Welcome to [AppName] login</h1>
+                    <p>Please enter your credentials to access your acconunt. </p>
+                </div>
                 <fieldset>
                     <form action="backend.php" method="post" autocomplete="on">
                         <div>
@@ -27,9 +29,9 @@
                             <label for="key">Password:</label>
                             <input type="Password" name="key" id="key" placeholder="Min 8 characters" minlength="8" required>
                         </div>
-                        <div id="buttom">
-                            <input type="submit">
-                            <input type="reset">
+                        <div class="button">
+                            <input id="send" type="submit">
+                            <input id="cancel" type="reset">
                         </div>
                 </fieldset>
 

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="design/mobilefirst.css">
     <link rel="stylesheet" href="design/queries.css">
     
@@ -11,9 +12,7 @@
 <body>
     <main>
         <section>
-            <div id="image">
-                
-            </div>
+            <div id="image"></div>
             <div class="login">
                 <div id="head">
                     <h1>Welcome to [AppName] login</h1>
@@ -21,17 +20,17 @@
                 </div>
                 <fieldset>
                     <form action="backend.php" method="post" autocomplete="on">
-                        <div>
-                            <label for="name">Username:</label>
+                        <div class="inputbox">
+                            <label for="name"><span class="material-symbols-outlined">login</span></label>    
                             <input type="text" id="name" id="name" placeholder="Username/Email Input Field" required>
                         </div>
-                        <div>
-                            <label for="key">Password:</label>
+                        <div class="inputbox">
+                            <label for="key"><span class="material-symbols-outlined">passkey</span></label>
                             <input type="Password" name="key" id="key" placeholder="Min 8 characters" minlength="8" required>
                         </div>
                         <div class="button">
-                            <input id="send" type="submit">
-                            <input id="cancel" type="reset">
+                            <input id="send" type="submit" value="Log in now">
+                            <input id="cancel" type="reset" value="Forgot?">
                         </div>
                 </fieldset>
 

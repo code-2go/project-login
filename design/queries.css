@@ -1,9 +1,6 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 620px) and (max-width: 1200px) {
-    main{
-        max-width: 620px;
-    }
     section{
         min-width: 620px;
         height: 320px;
@@ -13,38 +10,109 @@
         width: 310px;
         height: 320px;
         left: 50%;
-        border-radius: 0 10px 10px 0;
+        border-radius: 10px 0px 0px 10px;
+        transform: scale(-1,1);
     }
     .login{
+        width: 310px;
         height: 320px;
-        border-radius: 10px;
+        border-radius: 10px 0 0 10px;
+    }
+    #head{
+        padding: 10px 0;
     }
     h1{
-        font-size: 2.2em;
+        font-size: 2em;
     }
     h1,p{
         text-align: left;
         margin: 0;
-        padding: 10px 20px 0px 20px;
+        padding: 5px 20px;
     }
     fieldset{
-        max-width: 310px;
         text-align: left;
-        padding: 10px 20px 0px 20px;
+        padding: 0px;
+    }
+    .material-symbols-outlined{
+        padding-left: 15px;
+    }
+    .inputbox{
+        width: 270px;
+        border-radius: 15px;
     }
     .login input{
-        padding-top: 10px;
-    }
-    #key{
-        margin-left: 9px;
+        padding: 10px 18px;
     }
     .button{
-        margin: auto;
+        position: relative;
         max-width: 310px;
-        position: absolute;
-        left: 7%;
+        text-align: center;
+        padding-top: 10px;
     }
     #send, #cancel{
         width: 100px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    section{
+        min-width: 860px;
+        height: 520px;
+    }
+    #image{
+        z-index: 2;
+        width: 430px;
+        height: 520px;
+        border-radius: 10px 0px 0px 10px;
+    }
+    .login{
+        width: 430px;
+        height: 520px;
+        border-radius: 0 10px 10px 0;
+        left: 50%;
+    }
+    #head{
+        margin: 0 0 40px 20px;
+    }
+    h1{
+        font-size: 3em;
+        padding-top: 55px;
+    }
+    p{
+        font-size: 1.2em;
+        padding-top: 25px;
+    }
+    h1,p{
+        display: block;
+        text-align: left;
+        max-width: 430px;
+    }
+    fieldset{
+        width: auto;
+        text-align: left;
+        margin: 0px;
+        padding : 0px;
+    }
+    .inputbox{
+        width: 360px;
+        border-radius: 15px;
+        padding-left: 15px;
+    }
+    .login input{
+        padding: 10px 10px;  
+        width: 280px;
+    }
+    .button{
+        position: relative;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .material-symbols-outlined{
+        vertical-align: middle;
+    }
+    #send, #cancel{
+        width: 140px;
+        padding: 20px 0px;
+        border-radius: 20px;
     }
 }

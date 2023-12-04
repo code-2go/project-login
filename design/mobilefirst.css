@@ -15,7 +15,9 @@
 body{
     background-color: var(--color05);
 }
-section{
+section.login{
+    color: var(--color05);
+    background-color: var(--color03);
     min-width: 290px;
     height: 520px;
     position: absolute;
@@ -25,30 +27,17 @@ section{
     border-radius: 20px;
     box-shadow: 0px 0px 25px 10px #0f132354;
     overflow: hidden;
+    transition: width .2s, height .2s;
+    transition-timing-function: ease;
 }
 #image{
-    position: absolute;
-    width: 290px;
-    height: 210px;
+    height: 40%;
     background: black url(../images/login-bg.jpg) center bottom  no-repeat fixed;
     background-size: cover;
 }
-.login{
-    color: var(--color05);
-    background-color: var(--color03);
-    height: 310px;
-    position: relative;
-    top: 100%;
-    transform: translate(0, -100%);
-}
-#head{
-    padding-top: 5px;
-}
 h1, p{
-    max-width: 240px;
     text-align: center;
-    padding-top: 10px;
-    margin: auto;
+    padding: 10px 30px;
 }
 fieldset{
     padding-top: 10px;
@@ -57,17 +46,18 @@ fieldset{
 }
 .inputbox{
     background-color: rgb(255, 255, 255);
-    width: 230px;
+    width: 85%;
     margin: 4px auto;
     padding: 5px 0;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 .material-symbols-outlined{
     vertical-align: middle;
+    padding-left: 5%;
 }
 .login input{
-    padding: 8px 10px;
-    border-radius: 8px;
+    padding: 3% 4%;
+    border-radius: 15px;
     border: none;
 }
 .login input:focus{
@@ -75,15 +65,16 @@ fieldset{
     color: var(--color01);
 }
 #send, #cancel{
-    width: 100px;
+    width: 38%;
+    border-radius: 20px;
 }
 #send:hover, #cancel:hover{
     background-color: var(--color02);
     color: white;
 }
 .button{
-   padding-top: 20px;
-
+   padding-top: 8%;
+   text-align: center;
 }
 ::-webkit-input-placeholder{
     font-size: 0.9em;
